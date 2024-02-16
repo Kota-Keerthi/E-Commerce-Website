@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+a,a:hover{
+    text-decoration: none;
+    color: red;
+}
+.top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 25px;
+    background-color: rgb(30, 210, 81);
+}
+.top span{
+    color: #14a894;
+}
+.top ul{
+    list-style: none;
+    display: flex;
+}
+.top li{
+    margin: 0px 5px;
+}
+.top a{
+    color: #fff;
+}
+.top a:hover{
+    color:blue;
+}
+nav{
+    background:rgb(214, 194, 10);
+    padding: 5px 20px;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+nav a{
+    color: #ffffff;
+}
+nav a:hover{
+    color: aqua;
+
+}
+.Logo{
+    flex: 1;
+}
+.Logo a{
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+}
+.Logo a:hover{
+    color:greenyellow;
+}
+.Logo img{
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 40px;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.menu li{
+    padding: 10px 25px;
+    font-size: 15px;
+}
+.nav-bar{
+    font-size: 30px;
+    display: none;
+}
+.content{
+    background-image: url("https://www.shutterstock.com/image-photo/big-sales-girl-running-shopping-260nw-1427176361.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color:black;
+    height: 100vh;
+}
+.content h1{
+    font-size: 40px;
+}
+.content p{
+    font-size: 20px;
+    margin-top: 20px;
+}
+.content button{
+    margin-top: 30px;
+    padding: 15px 30px;
+    border: none;
+    background: red;
+    color: white;
+    font-size: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.heading{
+    text-align: center;
+    margin: 50px 0;
+    color:crimson;
+}
+.sec{
+ padding: 10px 5%;
+ background-color: gray;
+}
+.products{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+}
+.products .card{
+    width: 310px;
+    background-color: #f5f5f5;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+.products .card img{
+ height: 250px;
+ width: 100%;
+}
+.products .card .desc{
+    padding: 5px 20px;
+    opacity: 0.8;
+}
+.products .card .title{
+    font-weight: 900;
+    font-size: 20px;
+    color: black;
+    padding: 0 20px;
+}
+.products .card .box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.products .card .box .price{
+    color: crimson;
+    font-size: 20px;
+    font-weight: bold;
+}
+.products .card .box  .btn{
+    font-size: 12px;
+    color: crimson;
+    padding: 10px 18px;
+    font-weight: 900;
+    border: 1px solid crimson ;
+    border-radius: 20px;
+}
+.products .card .box  .btn:hover{
+    cursor: pointer;
+    background-color: crimson;
+    color: white;
+
+}
+footer{
+    background-color: brown;
+    height: 10vh;
+}
+footer p{
+    text-align: center;
+    line-height: 10vh;
+}
+footer p a{
+text-decoration: none;
+color:crimson;
+font-weight: bold;
+}
